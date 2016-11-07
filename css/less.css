@@ -1,0 +1,43 @@
+.container {
+  width: 600px;
+}
+.container > .row {
+  width: 100%;
+}
+/*栅格化*/
+.container > .row > .col-m-1 {
+  width: 6666.66666667px;
+}
+.container > .row > .col-m-2 {
+  width: 6666.66666667px;
+}
+.container > .row > .col-m-3 {
+  width: 6666.66666667px;
+}
+.container > .row > .col-m-4 {
+  width: 6666.66666667px;
+}
+.container > .row > .col-m-5 {
+  width: 6666.66666667px;
+}
+.container > .row > .col-m-6 {
+  width: 6666.66666667px;
+}
+.container > .row > .col-m-7 {
+  width: 6666.66666667px;
+}
+.container > .row > .col-m-8 {
+  width: 6666.66666667px;
+}
+.container > .row > .col-m-9 {
+  width: 6666.66666667px;
+}
+.container > .row > .col-m-10 {
+  width: 6666.66666667px;
+}
+.container > .row > .col-m-11 {
+  width: 6666.66666667px;
+}
+.container > .row > .col-m-12 {
+  width: 6666.66666667px;
+}

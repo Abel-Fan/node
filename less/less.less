@@ -1,0 +1,22 @@
+@import "var.less";
+
+.container{
+  width:@num1*1-@miniWidth;
+}
+.container>.row{
+  width:100%;
+}
+
+/*栅格化*/
+.loop();
+.loop(@type:m,@i:1) when(@i<=@cols){
+  .container>.row>.col-@{type}-@{i}{
+    width:@num1/@cols*100%;
+  }
+  .container-fluild>.row>.col-@{type}-@{i}{
+    width:
+  }
+  .loop(@type,@i+1);
+}
+
+@media

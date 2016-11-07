@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        margin: 0;padding:0;
+    }
+    .box{
+        width:500px;heigth:auto;
+        margin:auto;
+    }
+    .box:after,.box:before{
+        content:"";
+        display: block;
+    }
+    .box:before{
+        clear: both;
+    }
+
+    .left{
+        width:500px;  height:auto;
+        border:1px solid red;
+        float:left;
+    }
+    .right{
+        width:100%;height:200px;
+        float:left;
+    }
+    .right div{
+        float:left;
+        width:50%;height:100px;
+        border-left:1px solid red;
+        border-bottom:1px solid red;
+    }
+    .right div:nth-child(2){
+        border-right:1px solid red;
+    }
+    .right div:nth-child(4){
+        border-right:1px solid red;
+    }
+    .left div:nth-child(1){
+        width:100%;  height:200px;
+        float:left;
+        border-bottom:1px solid red;
+    }
+    .left div:nth-child(2){
+        width:50%;  height:200px;
+        float:left;
+        border-right:1px solid red;
+    }
+    .left div:nth-child(3){
+        width:50%;  height:200px;
+        float:left;
+    }
+    .left div:nth-child(4){
+        float:left;
+        width:100%;height:200px;
+        border-top:1px solid red;
+    }
+    @media screen and (min-width:1000px){
+        .box{
+            width:1000px;
+        }
+        .left{
+            width:75%;
+        }
+        .right{
+            width:25%;
+            height:auto;
+            display: block;
+            float:left;
+            border:1px solid red;
+            border-left:none;
+        }
+        .right div{
+            border:none;
+            float:left;
+            width:100%;height:100px;
+            border-bottom: 1px solid red;
+        }
+        .right div:nth-child(4){
+            border:none;
+        }
+        .left div:nth-child(1){
+            width:66.666%;
+        }
+        .left div:nth-child(2){
+            width:33.333%;
+            border:none;
+            border-left:1px solid red;
+            border-bottom:1px solid red;
+        }
+        .left div:nth-child(3){
+            width:33.3333%;
+            border-right:1px solid red;
+        }
+        .left div:nth-child(4){
+            border-top:none;
+            display: block;
+            width:66.666%;
+        }
+    }
+</style>
+<body>
+
+<div></div>
+    <div class="box">
+        <div class="left">
+            <div>01</div>
+            <div>02</div>
+            <div>03</div>
+            <div>04</div>
+        </div>
+        <div class="right">
+            <div>01</div>
+            <div>02</div>
+            <div>03</div>
+            <div>04</div>
+        </div>
+    </div>
+</body>
+</html>
